@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms and Inputs</title>
+</head>
+<body>
+    <h2>Go back to <a href="../index.html">index page</a></h2>
+
+    <h1>Form Elements</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Example of HTML form elments</legend>
+
+            <!-- Common Input Types -->
+            <div>
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label for="email">Your Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="password">Your Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter your password">
+            </div>
+
+            <div>
+                <label for="age">Your age</label>
+                <input id="age" name="age" type="number" placeholder="Enter your age">
+            </div>
+
+            <div>
+                <label for="phone">Enter your phone number:</label>
+                <input  id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <!-- this pattern will allow 012-345-6789 format only. -->
+            </div>
+
+            <div>
+                <label for="file">Profile Image</label>
+                <input id="file" name="file" type="file" accept="image/png, image/jpeg">
+            </div>
+
+            <div>
+                <label for="search">Search all posts</label>
+                <input id="search" name="search" type="search">
+            </div>
+
+            <div>
+                <label for="pets">Choose your favorite pet</label>
+                <select name="pets" id="pets">
+                    <option value="">Please choose an option</option>
+                    <option disabled value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option selected value="rabbit">Rabbit</option>
+                    <option value="parrot">Parrot</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <!-- Checkbox and Radio -->
+            <h4>Check your interests</h4>
+            <div>
+                <label for="coding">Coding</label>
+                <input id="coding" name="interest" type="checkbox" value="coding">
+            </div>
+            <div>
+                <label for="music">Music</label>
+                <input id="music" name="interest" type="checkbox" value="music">
+            </div>
+            <div>
+                <label for="game">Gaming</label>
+                <input id="game" name="interest" type="checkbox" value="game">
+            </div>
+
+            <h4>Pick one type of payment</h4>
+            <div>
+                <label for="credit">Credit</label>
+                <input id="credit" name="payment" type="radio" value="credit">
+            </div>
+            <div>
+                <label for="cash">Cash</label>
+                <input id="cash" name="payment" type="radio" value="cash">
+            </div>
+            <div>
+                <label for="crypto">Crypto</label>
+                <input id="crypto" name="payment" type="radio" value="crypto">
+            </div>
+
+            <hr>
+
+
+            <!-- Date and Time -->
+            <div>
+                <label for="birthdate">Choose your birthdate</label>
+                <input id="birthdate" name="birthdate" type="date" value="2001-06-30" min="2000-01-01" max="2022-12-31">
+            </div>
+
+            <div>
+                <label for="booking">Choose your booking time</label>
+                <input id="booking" name="booking" type="time" min="09:00" max="18:00">
+            </div>
+
+
+            <!-- Range slider -->
+            <div>
+                <label for="price">Choose your price range.</label>
+                <input id="price" name="price" type="range" min="0" max="1000" step="100">
+            </div>
+
+            <!-- Color picker -->
+            <div>
+                <label for="color">Choose your color</label>
+                <input id="color" name="color" type="color" value="#932342">
+            </div>
+
+
+            <!-- Form Submission -->
+            <input type="submit" value="Submit">
+            <!-- <button type="submit">Submit</button> -->
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

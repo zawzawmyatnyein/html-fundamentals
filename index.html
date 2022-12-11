@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - The Fundamentals</title>
+</head>
+<body>
+    <h1 id="text">Text Elements</h1>
+    <!-- Headings -->
+    <h1>This is Level 1 Heading element</h1>
+    <h2>This is Level 2 Heading element</h2>
+    <h3>This is Level 3 Heading element</h3>
+    <h4>This is Level 4 Heading element</h4>
+    <h5>This is Level 5 Heading element</h5>
+    <h6>This is Level 6 Heading element</h6>
+
+    <!-- Paragraph -->
+    <p>This is an example of a paragraph element. The p tag defines the paragraph of a text. It is a block-level element and always starts on a new line.</p>
+    <p>Here is another paragraph. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, atque? Saepe obcaecati tempore corrupti natus aliquid quaerat nostrum voluptates eius quod ab, libero voluptate praesentium, quisquam dolorum maxime nobis doloribus?</p>
+
+    <!-- Strong, Emphasis, Bold, Italic  -->
+    <!-- Use <strong> tag instead of <b> tag -->
+    <p>Whatever you do, <strong> do not open this door.</strong></p>
+
+    <!-- Use <em> tag instead of <i> tag -->
+    <p>Just <em>do</em> it already. It's getting late.</p>
+
+    <!-- Superscript  -->
+    <p>4<sup>th</sup> of December, 2022</p>
+
+    <!-- Subscript -->
+    <p>Chemical Formula of water is H<sub>2</sub>O</p>
+
+    <!-- Horizontal line -->
+    <hr>
+
+
+    <!-- Unordered List -->
+    <h1>Lists</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ol>
+
+    <hr>
+
+    <!-- Links -->
+    <h1>Links</h1>
+    <p>Click here to go to <a href="#text">text elements section.</a></p>
+
+    <p>This is the link of our <a href="https://www.google.com">website</a>.</p>
+
+    <p>You can reach us at our <a href="mailto:example@gmail.com">email</a>.</p>
+
+    <p>You can call us to our <a href="tel:+95912345678">office phone</a>.</p>
+
+    <p>Visit our <a href="pages/about.html">about us</a> page to know more.</p>
+
+    <hr>
+
+    <!-- Images -->
+    <h1>Images</h1>
+    <img src="assets/img/man.jpg" alt="Man looking at a computer">
+    <img src="https://images.unsplash.com/photo-1670611554923-ee1deeff7ab5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="Snowy Mountain">
+
+    <figure>
+        <img src="assets/img/city.jpg" alt="Beautiful City Landscape">
+        <figcaption>Buildings in Tokyo, Japan</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- Audio, Video -->
+    <h1>Audio, Video</h1>
+
+    <audio src="assets/bensound.mp3" atuoplay muted loop controls></audio>
+
+    <video src="assets/woman.mp4" autoplay muted loop controls></video>
+
+    <!-- <video controls>
+        <source src="assets/woman.mp4" type="video/mp4">
+    </video> -->
+
+    <hr>
+
+    <!-- Tables -->
+    <h1>Tables</h1>
+    <table>
+        <tr>
+            <td>Row1-Col1</td>
+            <td>Row1-Col2</td>
+            <td>Row1-Col3</td>
+        </tr>
+        <tr>
+            <td>Row2-Col1</td>
+            <td>Row2-Col2</td>
+            <td>Row2-Col3</td>
+        </tr>
+    </table>
+
+    <!-- Do not use <br> tag for spacing, style with css only. Here just for demonstration -->
+    <br>
+    <br>
+
+    <table>
+        <caption>Shopping List for Fruits</caption>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Potatoes</td>
+                <td>51</td>
+                <td>$1.0</td>
+            </tr>
+            <tr>
+                <td>Nuts</td>
+                <td>20</td>
+                <td>$2.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Toatal Price</td>
+                <td>$30.0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- Form Elements -->
+    <h1>Form Elements</h1>
+    <a href="pages/form.html" style="font-size: 1.5rem;">Go to Forms Page</a>
+
+</body>
+</html>
