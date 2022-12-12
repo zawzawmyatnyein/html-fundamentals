@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Semantic Elements</title>
+</head>
+<body>
+    <h2>Go back to <a href="../index.html">index page</a></h2>
+
+    <h1>Semantic Elements</h1>
+
+    <p>You are learning the importance of semantic elements in <abbr>HTML</abbr> (Hyper Text Markup Language)</p>
+
+    <p>Contact me for any kind of consultaion:</p>
+    <address>
+        <a href="mailto:me@example.com">me@example.com</a><br>
+        <a href="tel:+9591234567">(+95) 9123-4567</a>
+    </address>
+
+    <article>
+        <h2>How to add darkmode to websites</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi? Dicta, placeat. Quam voluptas veritatis quo fugit mollitia minus assumenda dolorum, ipsa autem minima quaerat unde laboriosam similique totam vitae voluptatem inventore aliquid deleniti aperiam? Assumenda, corrupti temporibus unde minima quas eligendi id ratione, tenetur quisquam quia molestiae, nulla totam.</p>
+    </article>
+
+
+    <!-- <aside></aside> element can be used for sidebars -->
+
+    <figure>
+        <blockquote>
+            <p>If you cannot do great things, do small things in a great way.</p>
+        </blockquote>
+        <figcaption>—Napoleon Hill, <cite>Whatever book</cite></figcaption>
+    </figure>
+
+    <p>To install this package, type <code>npm i mypackage</code> in your terminal.</p>
+
+    <pre>
+        <code>
+            const debounce = (callback, wait) => {
+                let timeoutId = null;
+                return (...args) => {
+                window.clearTimeout(timeoutId);
+                timeoutId = window.setTimeout(() => {
+                    callback.apply(null, args);
+                }, wait);
+                };
+            }
+        </code>
+    </pre>
+
+    <dl>
+        <dt>JavaScript</dt>
+        <dd>An object-oriented computer programming language commonly used to create interactive effects within web browsers.</dd>
+
+        <dt>PHP</dt>
+        <dd>A general-purpose scripting language geared toward web development. </dd>
+    </dl>
+
+    <!-- <header></header>  -->
+    <!-- <main></main> -->
+    <!-- <section></section> -->
+    <!-- <footer></footer> -->
+
+    <iframe
+        width="560" height="315"
+        src="https://www.youtube.com/embed/qz0aGYrrlhU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>K</kbd> to search our website.</p>
+
+    <p>Learn the HyperText Markup Language on <mark>MDN web docs</mark>.</p>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Index page</a></li>
+            <li><a href="form.html">Form page</a></li>
+            <li><a href="about.html">About page</a></li>
+        </ul>
+    </nav>
+
+    <label for="download">Download progress:</label>
+    <progress id="download" max="100" value="70"> 70% </progress>
+
+    <details>
+        <summary>Do we offer free trials?</summary>
+        Yes. We do offer free trials, however you may need to provide credit card information for usuage of our services. You can cancel at any time though.
+    </details>
+
+    <!-- check docs for valid datetime attribute formats -->
+    <p>The concert starts at <time datetime="20:00">20:00</time> so don't be late.</p>
+</body>
+</html>
